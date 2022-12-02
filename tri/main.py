@@ -137,6 +137,20 @@ DEBUT tri_bulle (parametre tab: tableau)
             SI tab[j] > tab[j+1] ALORS
                 ECHANGER DE PLACE tab[j] et tab[j+1]
     RETOURNER tab
+    
+DEBUT tri_bulle (parametre tab: tableau)
+      variable echange <- true 
+      TANTQUE echange = true ALORS 
+           échange <-false
+           k = 0 
+                POUR i de 0 à la longueur de tab - 1 - K FAIRE 
+                     SI tab[i ]> tab[i+1] ALORS
+                         échange <- true
+                         ECHANGER tab[I ] et tab[I + 1] 
+                     FIN SI
+                 FIN POUR
+      FINTANTQUE 
+FIN
 """
 
 
